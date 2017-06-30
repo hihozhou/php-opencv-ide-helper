@@ -40,6 +40,7 @@ class Mat
      * @param int $rows
      * @param int $cols
      * @param int $type
+     * return Mat
      */
     public static function zeros(int $rows, int $cols, int $type = 0)
     {
