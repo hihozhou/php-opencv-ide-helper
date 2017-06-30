@@ -122,4 +122,16 @@ class Mat
 
     }
 
+    /**
+     * 获取指定区域roi矩阵，并以Mat对象返回
+     * @param Rect $rect
+     * @return Mat
+     * @throws Exception 当获取roi区域超过源Mat矩阵范围时，抛出异常
+     */
+    public function getImageROI(Rect $rect)
+    {
+
+    }
+
+
 }
