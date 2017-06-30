@@ -50,8 +50,9 @@ class Mat
     /**
      * 输出Mat对象的矩阵数据信息
      * @param int $type
+     * @see Formatter::FMT_DEFAULT
      */
-    public function print(int $type = 2)
+    public function print(int $type = Formatter::FMT_DEFAULT)
     {
 
     }
