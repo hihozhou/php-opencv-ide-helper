@@ -133,5 +133,14 @@ class Mat
 
     }
 
+    /**
+     * 把当前Mat矩阵合并到$mat中
+     * @param Mat $mat 合并到的矩阵
+     * @param Mat|NULL $mask 掩码，必须为灰度图
+     */
+    public function copyTo(Mat $mat, Mat $mask = NULL){
+
+    }
+
 
 }
