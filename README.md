@@ -20,3 +20,5 @@ API 手册在线预览：[PHP-OpenCV API Manual](http://php-opencv.hihozhou.com/
 开发PHP-OpenCV项目同时，在IDE中打开/导入本文件即可。
 
 使用 IDE自带 ``Include Path`` 功能引入 helper 目录
+
+![demo1](./imgs/01.png "demo1")  
