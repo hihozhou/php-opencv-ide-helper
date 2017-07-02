@@ -41,9 +41,11 @@ function waitKey(int $sec)
  * @param Mat $src2 第二张合成图片的Mat对象，这里注意要与一个Mat对象拥有相同的尺寸和通道数
  * @param double $beta 第二张图片的权重，$alpha + $beta = 1
  * @param double $gamma 一个加到权重总和上的标量值。其含义通过接下来的里出的式子自然会理解
+ * @param Mat $dst 输出的图像矩阵，如果传入为NULL，则返回一个新的对象
  * @param int $dtype 返回的Mat对象的深度，默认为-1.当两个Mat具有相同的深度时候，这个参数设置为-1,既等同于$src1.depth()
+ * @return null|Mat
  */
-function addWeighted(Mat $src1, double $alpha, Mat $src2, double $beta, double $gamma, int $dtype = -1)
+function addWeighted(Mat $src1, double $alpha, Mat $src2, double $beta, double $gamma, Mat $dst = NULL, int $dtype = -1)
 {
 
 }
