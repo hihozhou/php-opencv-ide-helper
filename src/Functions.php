@@ -49,3 +49,60 @@ function addWeighted(Mat $src1, double $alpha, Mat $src2, double $beta, double $
 {
 
 }
+
+
+/**
+ * @param int $n
+ * @return int
+ */
+function CV_8UC(int $n){
+
+}
+
+/**
+ * @param int $n
+ * @return int
+ */
+function CV_8SC(int $n){
+
+}
+
+/**
+ * @param int $n
+ * @return int
+ */
+function CV_16UC(int $n){
+
+}
+
+/**
+ * @param int $n
+ * @return int
+ */
+function CV_16SC(int $n){
+
+}
+
+/**
+ * @param int $n
+ * @return int
+ */
+function CV_32SC(int $n){
+
+}
+
+/**
+ * @param int $n
+ * @return int
+ */
+function CV_32FC(int $n){
+
+}
+
+/**
+ * @param int $n
+ * @return int
+ */
+function CV_64FC(int $n){
+
+}
