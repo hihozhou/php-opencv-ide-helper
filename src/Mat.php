@@ -28,10 +28,11 @@ class Mat
      * @param int $rows
      * @param int $cols
      * @param Scalar $color
+     * @return Mat
      */
-    public function __construct(int $rows, int $cols, Scalar $color = NULL, int $type = 0)
+    public function __construct(int $rows, int $cols, int $type = 0, Scalar $color = NULL)
     {
-
+        return new Mat();
     }
 
 
@@ -140,6 +141,18 @@ class Mat
      */
     public function copyTo(Mat $mat, Mat $mask = NULL)
     {
+
+    }
+
+
+    /**
+     * @param int $row
+     * @param int $col
+     * @param int $channel
+     * @param int|NULL $value
+     * @return int|NULL
+     */
+    public function at(int $row, int $col, int $channel, int $value = NULL){
 
     }
 
