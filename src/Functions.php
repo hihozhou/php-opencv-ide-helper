@@ -152,6 +152,8 @@ function getOptimalDFTSize(int $vecsize)
 }
 
 /**
+ * copyMakeBorder函数
+ * 该函数用于将图像扩充图像边界
  * @param Mat $src
  * @param Mat $dst
  * @param int $top
