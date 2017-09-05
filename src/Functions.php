@@ -206,3 +206,38 @@ function normalize(Mat $src, Mat $dst, int $alpha = 1, int $beta = 0, int $norm_
 {
 
 }
+
+/**
+ * 获取滑动条的值
+ * @param String $trackbarname 轨迹条的名称
+ * @param String $winname 轨迹条的父窗口名称
+ */
+function getTrackBarPos(String $trackbarname, String $winname)
+{
+
+}
+
+/**
+ * 表查找
+ * @param Mat $src 原图像矩阵
+ * @param Mat $lut 表查找数据
+ * @param Mat $dst 输出矩阵
+ */
+function LUT(Mat $src, Mat $lut, Mat $dst)
+{
+}
+
+/**
+ * @return int
+ */
+function getTickCount(){
+
+}
+
+
+/**
+ * @return double
+ */
+function getTickFrequency(){
+
+}

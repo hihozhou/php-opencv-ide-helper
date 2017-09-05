@@ -35,6 +35,10 @@ class Mat
         return new Mat();
     }
 
+    public function size()
+    {
+
+    }
 
     /**
      * 返回一个制定行数和列数的空矩阵对象
@@ -44,6 +48,11 @@ class Mat
      * return Mat
      */
     public static function zeros(int $rows, int $cols, int $type = 0)
+    {
+
+    }
+
+    public static function zerosBySize(Size $size, int $type = 0)
     {
 
     }
@@ -152,7 +161,8 @@ class Mat
      * @param int|NULL $value
      * @return int|NULL
      */
-    public function at(int $row, int $col, int $channel, int $value = NULL){
+    public function at(int $row, int $col, int $channel, int $value = NULL)
+    {
 
     }
 
