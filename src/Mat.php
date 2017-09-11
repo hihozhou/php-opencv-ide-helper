@@ -35,6 +35,9 @@ class Mat
         return new Mat();
     }
 
+    /**
+     * @return Size
+     */
     public function size()
     {
 
@@ -52,6 +55,11 @@ class Mat
 
     }
 
+    /**
+     * @param Size $size
+     * @param int $type
+     * @return Mat
+     */
     public static function zerosBySize(Size $size, int $type = 0)
     {
 
@@ -67,7 +75,7 @@ class Mat
 
     }
 
-    /*
+    /**
      * 返回Mat对象的type
      * @return int
      */
@@ -162,6 +170,17 @@ class Mat
      * @return int|NULL
      */
     public function at(int $row, int $col, int $channel, int $value = NULL)
+    {
+
+    }
+
+
+    /**
+     * 设置矩阵统一某种颜色
+     * todo mask
+     * @param Scalar $value
+     */
+    public function setTo(Scalar $value)
     {
 
     }

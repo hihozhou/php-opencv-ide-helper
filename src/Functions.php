@@ -230,7 +230,8 @@ function LUT(Mat $src, Mat $lut, Mat $dst)
 /**
  * @return int
  */
-function getTickCount(){
+function getTickCount()
+{
 
 }
 
@@ -238,6 +239,23 @@ function getTickCount(){
 /**
  * @return double
  */
-function getTickFrequency(){
+function getTickFrequency()
+{
+
+}
+
+
+/**
+ * @param Mat $src 输入的图片
+ * @param Mat $dst 输出和src一样的size和channel的图片
+ * @param int $ddepth 原图像的深度，$src->depth()
+ * @param Mat $kernel 卷积核，是一个单通道浮点型的矩阵，如果你想使用不同的核在不同的通道，那么可以使用函数Split（）将通道分离，再逐个使用核运算
+ * @param Point|null $anchor 核的中心，默认在核的中点处
+ * @param double $delta 未知用途
+ * @param int $borderType 未知用途
+ * @return null
+ */
+function filter2D(Mat $src, Mat &$dst, int $ddepth, Mat $kernel, Point $anchor = null, double $delta = 0, int $borderType = BORDER_DEFAULT)
+{
 
 }
