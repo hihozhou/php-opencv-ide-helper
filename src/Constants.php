@@ -93,3 +93,18 @@ const NORM_TYPE_MASK = 7;
 const NORM_RELATIVE = 8;
 const NORM_MINMAX = 32;
 
+//! Flags for cv::namedWindow WindowFlags
+const WINDOW_NORMAL = 0x00000000;
+const WINDOW_AUTOSIZE = 0x00000001;
+const WINDOW_OPENGL = 0x00001000;
+const WINDOW_FULLSCREEN = 1;
+const WINDOW_FREERATIO = 0x00000100;
+const WINDOW_KEEPRATIO = 0x00000000;
+const WINDOW_GUI_EXPANDED = 0x00000000;
+const WINDOW_GUI_NORMAL = 0x00000010;
+
+//! shape of the structuring element
+//MorphShapes
+const MORPH_RECT = 0;
+const MORPH_CROSS = 1;
+const MORPH_ELLIPSE = 2;

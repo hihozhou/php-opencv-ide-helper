@@ -133,6 +133,13 @@ function merge(array $channels, Mat $dst)
 
 }
 
+/**
+ * @param string $trackbarname
+ * @param string $winname
+ * @param int $value
+ * @param int $count
+ * @param callable $onChange
+ */
 function createTrackbar(string $trackbarname, string $winname, int $value, int $count, callable $onChange)
 {
 
@@ -256,6 +263,70 @@ function getTickFrequency()
  * @return null
  */
 function filter2D(Mat $src, Mat &$dst, int $ddepth, Mat $kernel, Point $anchor = null, double $delta = 0, int $borderType = BORDER_DEFAULT)
+{
+
+}
+
+/**
+ * 创建窗口
+ * @param string $winname
+ * @param int $flags
+ */
+function namedWindow(string $winname, int $flags = WINDOW_AUTOSIZE)
+{
+
+}
+
+/**
+ * 移动窗口
+ * @param string $winname
+ * @param int $x
+ * @param int $y
+ */
+function moveWindow(string $winname, int $x, int $y)
+{
+
+}
+
+
+/**
+ * 创建核
+ * @param int $shape
+ * @param Size $ksize
+ * @param Point|null $achor
+ */
+function getStructuringElement(int $shape, Size $ksize, Point $achor = null)
+{
+
+}
+
+
+/**
+ * 腐蚀
+ * @param Mat $src
+ * @param Mat $dst
+ * @param Mat $kernel
+ * @param Point|null $anchor
+ * @param int $iterations
+ * @param int $borderType
+ * @param Scalar|null $borderValue
+ */
+function erode(Mat $src, Mat $dst, Mat $kernel, Point $anchor = null, int $iterations = 1, int $borderType = BORDER_CONSTANT, Scalar $borderValue = null)
+{
+
+}
+
+/**
+ * 膨胀
+ * @param Mat $src
+ * @param Mat $dst
+ * @param Mat $kernel
+ * @param Point|null $anchor
+ * @param int $iterations
+ * @param int $borderType
+ * @param Scalar|null $borderValue
+ */
+function dilate(Mat $src, Mat $dst, Mat $kernel, Point $anchor = null, int $iterations = 1, int $borderType = BORDER_CONSTANT, Scalar $borderValue = null)
 {
 
 }
