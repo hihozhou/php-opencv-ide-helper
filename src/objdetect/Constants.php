@@ -1,0 +1,8 @@
+<?php
+namespace CV;
+
+
+const CASCADE_DO_CANNY_PRUNING = 1;
+const CASCADE_SCALE_IMAGE = 2;
+const CASCADE_FIND_BIGGEST_OBJECT = 4;
+const CASCADE_DO_ROUGH_SEARCH = 8;

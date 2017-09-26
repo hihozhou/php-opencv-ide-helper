@@ -138,9 +138,9 @@ function merge(array $channels, Mat $dst)
  * @param string $winname
  * @param int $value
  * @param int $count
- * @param callable $onChange
+ * @param callable|null $onChange
  */
-function createTrackbar(string $trackbarname, string $winname, int $value, int $count, callable $onChange)
+function createTrackbar(string $trackbarname, string $winname, int $value, int $count, callable $onChange = null)
 {
 
 }
@@ -218,6 +218,7 @@ function normalize(Mat $src, Mat $dst, int $alpha = 1, int $beta = 0, int $norm_
  * 获取滑动条的值
  * @param String $trackbarname 轨迹条的名称
  * @param String $winname 轨迹条的父窗口名称
+ * @return int
  */
 function getTrackBarPos(String $trackbarname, String $winname)
 {
@@ -294,6 +295,7 @@ function moveWindow(string $winname, int $x, int $y)
  * @param int $shape
  * @param Size $ksize
  * @param Point|null $achor
+ * @return Mat
  */
 function getStructuringElement(int $shape, Size $ksize, Point $achor = null)
 {
@@ -330,3 +332,5 @@ function dilate(Mat $src, Mat $dst, Mat $kernel, Point $anchor = null, int $iter
 {
 
 }
+
+

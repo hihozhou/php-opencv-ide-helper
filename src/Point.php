@@ -28,7 +28,7 @@ class Point
     /**
      * Point constructor.
      * @param int $x
-     * @param int $yq
+     * @param int $y
      */
     public function __construct(int $x, int $y)
     {

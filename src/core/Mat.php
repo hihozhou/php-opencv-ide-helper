@@ -30,7 +30,7 @@ class Mat
      * @param Scalar $color
      * @return Mat
      */
-    public function __construct(int $rows, int $cols, int $type = 0, Scalar $color = NULL)
+    public function __construct(int $rows, int $cols, int $type, Scalar $color = NULL)
     {
         return new Mat();
     }
@@ -181,6 +181,15 @@ class Mat
      * @param Scalar $value
      */
     public function setTo(Scalar $value)
+    {
+
+    }
+
+
+    /**
+     * @return bool
+     */
+    public function empty()
     {
 
     }
