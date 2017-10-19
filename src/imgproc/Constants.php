@@ -296,3 +296,36 @@ const THRESH_TOZERO_INV = 4; //!< \f[\texttt{dst} (x,y) =  \fork{0}{if \(\texttt
 const THRESH_MASK = 7;
 const THRESH_OTSU = 8; //!< flag, use Otsu algorithm to choose the optimal threshold value
 const THRESH_TRIANGLE = 16; //!< flag, use Triangle algorithm to choose the optimal threshold value
+
+//AdaptiveThresholdTypes
+const ADAPTIVE_THRESH_MEAN_C = 0;
+const ADAPTIVE_THRESH_GAUSSIAN_C = 1;
+
+//! mode of the contour retrieval algorithm
+//RetrievalModes
+const RETR_EXTERNAL = 0;
+/** retrieves all of the contours without establishing any hierarchical relationships. */
+const RETR_LIST = 1;
+/** retrieves all of the contours and organizes them into a two-level hierarchy. At the top
+ * level, there are external boundaries of the components. At the second level, there are
+ * boundaries of the holes. If there is another contour inside a hole of a connected component, it
+ * is still put at the top level. */
+const RETR_CCOMP = 2;
+/** retrieves all of the contours and reconstructs a full hierarchy of nested contours.*/
+const RETR_TREE = 3;
+const RETR_FLOODFILL = 4; //!<
+
+
+//! the contour approximation algorithm
+//ContourApproximationModes
+/** stores absolutely all the contour points. That is, any 2 subsequent points (x1,y1) and
+ * (x2,y2) of the contour will be either horizontal, vertical or diagonal neighbors, that is,
+ * max(abs(x1-x2),abs(y2-y1))==1. */
+const CHAIN_APPROX_NONE = 1;
+/** compresses horizontal, vertical, and diagonal segments and leaves only their end points.
+ * For example, an up-right rectangular contour is encoded with 4 points. */
+const CHAIN_APPROX_SIMPLE = 2;
+/** applies one of the flavors of the Teh-Chin chain approximation algorithm @cite TehChin89 */
+const CHAIN_APPROX_TC89_L1 = 3;
+/** applies one of the flavors of the Teh-Chin chain approximation algorithm @cite TehChin89 */
+const CHAIN_APPROX_TC89_KCOS = 4;

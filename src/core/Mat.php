@@ -195,4 +195,25 @@ class Mat
     }
 
 
+    /**
+     * @param Mat $value1
+     * @param Mat $value2
+     * @return Mat
+     */
+    public static function add(Mat $value1, Mat $value2)
+    {
+
+    }
+
+    /**
+     * @param Mat $value1
+     * @param Mat $value2
+     * @return Mat
+     */
+    public static function subtract(Mat $value1, Mat $value2)
+    {
+
+    }
+
+
 }

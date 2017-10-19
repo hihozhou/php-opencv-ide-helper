@@ -96,3 +96,35 @@ function circle(Mat $img, Point $center, int $radius, Scalar $color, int $thickn
 {
 
 }
+
+function GaussianBlur(Mat $src, Mat $dst, Size $ksize, double $sigmaX, double $sigmaY = 0, $borderType = BORDER_DEFAULT)
+{
+
+}
+
+/**
+ * 自适应阈值化函数
+ * @param Mat $src
+ * @param Mat $dst
+ * @param double $maxValue
+ * @param int $adaptiveMethod
+ * @param int $thresholdType
+ * @param int $blockSize
+ * @param double $C
+ */
+function adaptiveThreshold(Mat $src, Mat $dst, double $maxValue, int $adaptiveMethod, int $thresholdType, int $blockSize, double $C)
+{
+
+}
+
+/**
+ * @param Mat $image
+ * @param array $contours
+ * @param int $mode
+ * @param int $method
+ * @param Point|null $offset
+ */
+function findContoursWithoutHierarchy(Mat $image, array $contours, int $mode, int $method, Point $offset = null)
+{
+
+}
