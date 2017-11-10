@@ -1,6 +1,14 @@
 <?php
 namespace CV;
 
+//! type of line
+//enum LineTypes
+const FILLED = -1;
+const LINE_4 = 4; //!< 4-connected line
+const LINE_8 = 8; //!< 8-connected line
+const LINE_AA = 16; //!< antialiased line
+
+
 //! shape of the structuring element
 //MorphShapes
 const MORPH_RECT = 0;

@@ -46,3 +46,40 @@ const CV_64FC2 = CV_64FC(2);
 const CV_64FC3 = CV_64FC(3);
 const CV_64FC4 = CV_64FC(4);
 
+
+/**
+ * BorderTypes
+ * Various border types, image boundaries are denoted with `|`
+ * @see borderInterpolate, copyMakeBorder
+ */
+const BORDER_CONSTANT = 0; //!< `iiiiii|abcdefgh|iiiiiii`  with some specified `i`
+const BORDER_REPLICATE = 1; //!< `aaaaaa|abcdefgh|hhhhhhh`
+const BORDER_REFLECT = 2; //!< `fedcba|abcdefgh|hgfedcb`
+const BORDER_WRAP = 3; //!< `cdefgh|abcdefgh|abcdefg`
+const BORDER_REFLECT_101 = 4; //!< `gfedcb|abcdefgh|gfedcba`
+const BORDER_TRANSPARENT = 5; //!< `uvwxyz|absdefgh|ijklmno`
+
+const BORDER_REFLECT101 = BORDER_REFLECT_101;//!< same as BORDER_REFLECT_101
+const BORDER_DEFAULT = BORDER_REFLECT_101;//!< same as BORDER_REFLECT_101
+const BORDER_ISOLATED = 16;//!< do not look outside of ROI
+
+
+/**
+ * NormTypes
+ * @see normalize
+ */
+const NORM_INF = 1;
+const NORM_L1 = 2;
+const NORM_L2 = 4;
+const NORM_L2SQR = 5;
+const NORM_HAMMING = 6;
+const NORM_HAMMING2 = 7;
+const NORM_TYPE_MASK = 7;
+const NORM_RELATIVE = 8;
+const NORM_MINMAX = 32;
+
+/* fundamental constants */
+const CV_PI = 3.1415926535897932384626433832795;
+const CV_2PI = 6.283185307179586476925286766559;
+const CV_LOG2 = 0.69314718055994530941723212145818;
+

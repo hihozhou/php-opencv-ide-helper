@@ -128,3 +128,135 @@ function findContoursWithoutHierarchy(Mat $image, array $contours, int $mode, in
 {
 
 }
+
+/**
+ * @param Mat $image 要绘制轮廓的图像
+ * @param array $contours 所有输入的轮廓，每个轮廓被保存成一个point二位数组（向量）
+ * @param int $contourIdx 指定要绘制轮廓的编号，如果是负数，则绘制所有的轮廓
+ * @param Scalar $color 绘制轮廓所用的颜色
+ * @param int $thickness 绘制轮廓的线的粗细，如果是负数，则轮廓内部被填充
+ * @param int $lineType 绘制轮廓的线的连通性
+ * @param array $hierarchy 关于层级的可选参数，只有绘制部分轮廓时才会用到
+ * @param $maxLevel 绘制轮廓的最高级别，这个参数只有hierarchy有效的时候才有效
+ *          maxLevel=0，绘制与输入轮廓属于同一等级的所有轮廓即输入轮廓和与其相邻的轮廓
+ *          maxLevel=1, 绘制与输入轮廓同一等级的所有轮廓与其子节点。
+ *          maxLevel=2，绘制与输入轮廓同一等级的所有轮廓与其子节点以及子节点的子节点
+ * @param Point|null $offset
+ */
+function drawContours(Mat $image, array $contours,
+                      int $contourIdx, Scalar $color,
+                      int $thickness = 1, int $lineType = LINE_8,
+                      array $hierarchy = [],
+                      $maxLevel = INT_MAX, Point $offset = null)
+{
+
+}
+
+/**
+ * 返回外部矩形边界
+ * @param array $points point数组
+ * @return Rect
+ */
+function boundingRect(array $points)
+{
+
+}
+
+/**
+ * @param Mat $src 输入的图片
+ * @param Mat $dst 输出和src一样的size和channel的图片
+ * @param int $ddepth 原图像的深度，$src->depth()
+ * @param Mat $kernel 卷积核，是一个单通道浮点型的矩阵，如果你想使用不同的核在不同的通道，那么可以使用函数Split（）将通道分离，再逐个使用核运算
+ * @param Point|null $anchor 核的中心，默认在核的中点处
+ * @param double $delta 未知用途
+ * @param int $borderType 未知用途
+ * @return null
+ */
+function filter2D(Mat $src, Mat &$dst, int $ddepth, Mat $kernel, Point $anchor = null, double $delta = 0, int $borderType = BORDER_DEFAULT)
+{
+
+}
+
+/**
+ * 创建核
+ * @param int $shape
+ * @param Size $ksize
+ * @param Point|null $achor
+ * @return Mat
+ */
+function getStructuringElement(int $shape, Size $ksize, Point $achor = null)
+{
+
+}
+
+
+/**
+ * 腐蚀
+ * @param Mat $src
+ * @param Mat $dst
+ * @param Mat $kernel
+ * @param Point|null $anchor
+ * @param int $iterations
+ * @param int $borderType
+ * @param Scalar|null $borderValue
+ */
+function erode(Mat $src, Mat $dst, Mat $kernel, Point $anchor = null, int $iterations = 1, int $borderType = BORDER_CONSTANT, Scalar $borderValue = null)
+{
+
+}
+
+/**
+ * 膨胀
+ * @param Mat $src
+ * @param Mat $dst
+ * @param Mat $kernel
+ * @param Point|null $anchor
+ * @param int $iterations
+ * @param int $borderType
+ * @param Scalar|null $borderValue
+ */
+function dilate(Mat $src, Mat $dst, Mat $kernel, Point $anchor = null, int $iterations = 1, int $borderType = BORDER_CONSTANT, Scalar $borderValue = null)
+{
+
+}
+
+
+/**
+ * 主要用于获得图像绕着某一点的旋转矩阵
+ * @param Point $center 旋转的中心点
+ * @param double $angle 表示旋转的角度
+ * @param double $scale 图像缩放系数
+ * @return Mat
+ */
+function getRotationMatrix2D(Point $center, double $angle, double $scale)
+{
+
+}
+
+/**
+ * 反射变换方法
+ * @param Mat $src
+ * @param Mat $dst
+ * @param Mat $M
+ * @param Size $dsize
+ * @param ing $flags
+ * @param $borderMode
+ * @param Scalar|null $borderValue
+ */
+function warpAffine(Mat $src, Mat $dst, Mat $M, Size $dsize, ing $flags = INTER_LINEAR, $borderMode = BORDER_CONSTANT, Scalar $borderValue = null)
+{
+
+}
+
+
+/**
+ * @param Mat $image
+ * @param Size $patchSize
+ * @param Point $center
+ * @param Mat $patch
+ * @param int $patchType
+ */
+function getRectSubPix(Mat $image, Size $patchSize, Point $center, Mat $patch, int $patchType = -1)
+{
+
+}
