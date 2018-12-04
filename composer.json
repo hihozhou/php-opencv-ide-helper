@@ -23,5 +23,6 @@
       "src/core/Constants.php",
       "src/core/Functions.php"
     ]
-  }
+  },
+  "minimum-stability": "dev"
 }
