@@ -14,15 +14,12 @@
   },
   "autoload": {
     "psr-4": {
-      "CV\\": [
-        "src/core/",
-        "src/highui/"
-      ]
+      "CV\\": "src/"
     },
     "files": [
       "src/core/Constants.php",
       "src/core/Functions.php"
     ]
   },
-  "minimum-stability": "stable"
+  "minimum-stability": "dev"
 }

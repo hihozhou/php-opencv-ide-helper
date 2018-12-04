@@ -9,7 +9,16 @@ PHP-OpenCV releases 版本下载地址：[https://github.com/hihozhou/php-opencv
 
 API 手册在线预览：[PHP-OpenCV API Manual](http://php-opencv.hihozhou.com/zh-cn/api/)
 
-## 使用方式
+## 安装使用
+
+## 方式一：composer 安装
+
+```
+composer require --dev  hihozhou/php-opencv-ide-helper:dev-master
+```
+
+## 方式二：使用ide导入
+
 ### git 安装：
 
     git clone https://github.com/hihozhou/php-opencv-ide-helper.git
@@ -21,4 +30,6 @@ API 手册在线预览：[PHP-OpenCV API Manual](http://php-opencv.hihozhou.com/
 
 使用 IDE自带 ``Include Path`` 功能引入 helper 目录
 
+
+## 使用
 ![demo1](./imgs/01.png "demo1")  
