@@ -1,0 +1,15 @@
+{
+  "name": "hiho/php-opencv-ide-helper",
+  "description": "PHPOpenCV ide helper.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "hihozhou",
+      "email": "hihozhou@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0"
+  }
+}
