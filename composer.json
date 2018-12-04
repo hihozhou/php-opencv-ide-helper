@@ -1,5 +1,5 @@
 {
-  "name": "hiho/php-opencv-ide-helper",
+  "name": "hihozhou/php-opencv-ide-helper",
   "description": "PHPOpenCV ide helper.",
   "type": "library",
   "license": "MIT",
@@ -11,5 +11,17 @@
   ],
   "require": {
     "php": ">=7.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "CV\\": [
+        "src/core/",
+        "src/highui/"
+      ]
+    },
+    "files": [
+      "src/core/Constants.php",
+      "src/core/Functions.php"
+    ]
   }
 }

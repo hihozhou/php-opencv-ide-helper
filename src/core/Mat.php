@@ -32,7 +32,7 @@ class Mat
      */
     public function __construct(int $rows, int $cols, int $type, Scalar $color = NULL)
     {
-        return new Mat();
+
     }
 
     /**
