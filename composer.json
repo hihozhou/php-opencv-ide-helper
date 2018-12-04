@@ -24,5 +24,5 @@
       "src/core/Functions.php"
     ]
   },
-  "minimum-stability": "dev"
+  "minimum-stability": "stable"
 }
