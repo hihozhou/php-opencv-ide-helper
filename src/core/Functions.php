@@ -80,15 +80,18 @@ function CV_64FC(int $n)
 }
 
 /**
- * Mat矩阵切割，可以将多通道矩阵进行切割，
+ *
  *
  * Mat matrix cutting,You can cut the multi-channel matrix.
+ * Mat矩阵切割，可以将多通道矩阵进行切割
  *
  * @author hihozhou
  *
- * @param Mat $src 需要切割的矩阵对象 Matrix object that needs to be cut
+ * @param Mat $src  Matrix object that needs to be cut
+ *                  需要切割的矩阵对象
  *
- * @return array 返回包含各个通道的Mat对象数组 Returns an array of Mat objects containing each channel
+ * @return array  Returns an array of Mat objects containing each channel.
+ *                返回包含各个通道的Mat对象数组
  *
  * e.g:
  *
