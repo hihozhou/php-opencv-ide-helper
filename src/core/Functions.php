@@ -3,7 +3,7 @@
 namespace CV;
 
 
-function addWeighted(Mat $src1, double $alpha, Mat $src2, double $beta, double $gamma, Mat &$dst = NULL, int $dtype = -1)
+function addWeighted(Mat $src1, float $alpha, Mat $src2, float $beta, float $gamma, Mat &$dst = NULL, int $dtype = -1)
 {
 
 }
@@ -11,6 +11,7 @@ function addWeighted(Mat $src1, double $alpha, Mat $src2, double $beta, double $
 
 /**
  * @param int $n
+ *
  * @return int
  */
 function CV_8UC(int $n)
@@ -20,6 +21,7 @@ function CV_8UC(int $n)
 
 /**
  * @param int $n
+ *
  * @return int
  */
 function CV_8SC(int $n)
@@ -29,6 +31,7 @@ function CV_8SC(int $n)
 
 /**
  * @param int $n
+ *
  * @return int
  */
 function CV_16UC(int $n)
@@ -38,6 +41,7 @@ function CV_16UC(int $n)
 
 /**
  * @param int $n
+ *
  * @return int
  */
 function CV_16SC(int $n)
@@ -47,6 +51,7 @@ function CV_16SC(int $n)
 
 /**
  * @param int $n
+ *
  * @return int
  */
 function CV_32SC(int $n)
@@ -56,6 +61,7 @@ function CV_32SC(int $n)
 
 /**
  * @param int $n
+ *
  * @return int
  */
 function CV_32FC(int $n)
@@ -65,6 +71,7 @@ function CV_32FC(int $n)
 
 /**
  * @param int $n
+ *
  * @return int
  */
 function CV_64FC(int $n)
@@ -73,17 +80,33 @@ function CV_64FC(int $n)
 }
 
 /**
- * @param Mat $src
- * @return array
+ * Mat矩阵切割，可以将多通道矩阵进行切割，
+ *
+ * Mat matrix cutting,You can cut the multi-channel matrix.
+ *
+ * @author hihozhou
+ *
+ * @param Mat $src 需要切割的矩阵对象 Matrix object that needs to be cut
+ *
+ * @return array 返回包含各个通道的Mat对象数组 Returns an array of Mat objects containing each channel
+ *
+ * e.g:
+ *
+ * $image = new Mat(10,10,CV_8UC3,new Scalar(10,11,12));
+ *
+ * list($b,$g,$r) = CV\split($srcImage);
+ *
+ *
  */
-function split(Mat $src)
+function split(Mat $src): array
 {
 
 }
 
 /**
  * @param array $channels 合并的Mat对象数组
- * @param Mat $dst 合成输出的对象
+ * @param Mat   $dst      合成输出的对象
+ *
  * @return null
  */
 function merge(array $channels, Mat $dst)
@@ -96,7 +119,9 @@ function merge(array $channels, Mat $dst)
  * getOptimalDFTSize函数返回给定向量尺寸的傅立叶最优尺寸大小。
  * 为了提高离散傅立叶变换的运行速度，需要扩充图像，
  * 而具体扩充多少，就有这个函数来计算得到。
+ *
  * @param int $vecsize 需要计算最优的原始大小
+ *
  * @return int 返回最优大小
  */
 function getOptimalDFTSize(int $vecsize)
@@ -107,13 +132,14 @@ function getOptimalDFTSize(int $vecsize)
 /**
  * copyMakeBorder函数
  * 该函数用于将图像扩充图像边界
- * @param Mat $src
- * @param Mat $dst
- * @param int $top
- * @param int $bottom
- * @param int $left
- * @param int $right
- * @param int $borderType
+ *
+ * @param Mat         $src
+ * @param Mat         $dst
+ * @param int         $top
+ * @param int         $bottom
+ * @param int         $left
+ * @param int         $right
+ * @param int         $borderType
  * @param Scalar|NULL $value
  */
 function copyMakeBorder(Mat $src, Mat $dst, int $top, int $bottom, int $left, int $right, int $borderType, Scalar $value = NULL)
