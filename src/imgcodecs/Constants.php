@@ -24,7 +24,7 @@ const IMREAD_GRAYSCALE = 0;
 
 /**
  * If set, always convert image to the 3 channel BGR color image.
- *  如果设置该参数，请始终将图像转换为3通道BGR彩色图像。
+ * 如果设置该参数，请始终将图像转换为3通道BGR彩色图像。
  */
 const IMREAD_COLOR = 1;
 

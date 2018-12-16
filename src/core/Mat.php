@@ -207,9 +207,17 @@ class Mat
 
 
     /**
-     * @param int      $row
-     * @param int      $col
-     * @param int      $channel
+     * Get the value of the specific channel of the pixel specified by the Mat object
+     * 获取Mat对象指定位置像素点的特定通道的值
+     *
+     * @param int      $row     The row of pixels
+     *                          像素的所在行
+     *
+     * @param int      $col     The column of the pixel
+     *                          像素的所在列
+     *
+     * @param int      $channel The first few channels of the pixel's point, starting at 0
+     *                          像素点的第几个通道，从0开始
      * @param int|NULL $value
      *
      * @return int|NULL
