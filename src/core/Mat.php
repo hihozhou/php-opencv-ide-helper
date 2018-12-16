@@ -15,44 +15,49 @@ class Mat
 {
 
     /**
-     * 图像矩阵像素的行数
-     *
      * Number of rows of image matrix pixels
+     *
+     * 图像矩阵像素的行数
      *
      * @var int $rows
      */
     public $rows;
 
     /**
-     * 图像矩阵像素的列数
-     *
      * Number of columns of image matrix pixels
+     *
+     * 图像矩阵像素的列数
      *
      * @var int $cols
      */
     public $cols;
 
     /**
-     * @var int $type
+     * Represents the type of elements in the matrix and the number of channels in the matrix.
+     * It is a series of predefined constants whose naming convention is CV_(number of bits) + (data type) + (number of channels). Such as: CV_8UC1, CV_8UC3, etc.
      *
      * 表示了矩阵中元素的类型以及矩阵的通道个数，它是一系列的预定义的常量，
      * 其命名规则为CV_(位数）+（数据类型）+（通道数）。如：CV_8UC1、CV_8UC3等
      *
-     * Represents the type of elements in the matrix and the number of channels in the matrix.
-     * It is a series of predefined constants whose naming convention is CV_(number of bits) + (data type) + (number of channels). Such as: CV_8UC1, CV_8UC3, etc.
+     * @var int $type
      *
      */
     private $type;
 
 
     /**
+     * Mat constructor.
      * Mat构造方法
      *
-     * Mat constructor.
+     * @param int    $rows  Number of rows of image matrix pixels
+     *                      图像矩阵像素的行数
      *
-     * @param int    $rows  图像矩阵像素的行数   Number of rows of image matrix pixels
-     * @param int    $cols  图像矩阵像素的列数   Number of columns of image matrix pixels
-     * @param Scalar $color 每个像素点的颜色值   Scalar对象
+     * @param int    $cols  Number of columns of image matrix pixels
+     *                      图像矩阵像素的列数
+     *
+     * @param Scalar $color The color value of each pixel, Scalar object
+     *                      每个像素点的颜色值,Scalar对象
+     *
      *
      * @return Mat 返回创建的Mat对象
      */
