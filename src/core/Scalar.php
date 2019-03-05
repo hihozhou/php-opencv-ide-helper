@@ -23,6 +23,7 @@ class Scalar
 
     /**
      * Scalar constructor.
+     *
      * @param int $val1
      * @param int $val2
      * @param int $val3
@@ -36,7 +37,8 @@ class Scalar
     /**
      * 输出Scalar对象信息
      */
-    public function print(){
+    public function print()
+    {
 
     }
 }
